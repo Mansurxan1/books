@@ -1,0 +1,71 @@
+.author {
+    display: flex;
+    padding-bottom: 50px;
+    & .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    &__item {
+        background-color: #2a2a2a;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding-bottom: 5px;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &-img{
+            max-width: 250px;
+            min-height: 132px;
+            height: 100%;
+            z-index: 9;
+            img {
+                width: 100%;
+                height: 132px;
+                object-fit: cover;
+                position: relative
+            }
+        } 
+        &-text{
+            padding: 0 5px;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        line-height: 20px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        min-height: 40px;
+    }
+    &__years {
+        font-size: 14px;
+        color: #ffffff60;
+    }
+    &__img-top{
+        position: relative;
+        img{
+            position: absolute;
+            top: -50px;
+            right: -10px;
+        }
+    }
+    &__img-bottom{
+        position: relative;
+        img{
+            position: absolute;
+            bottom: -30px;
+            left: -25px;
+            transform: rotate(90deg);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use "./assets/fonts.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-family: Steinbeck;
+  font-weight: 400;
+  background: #191919;
+}
+
+.container{
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.modal-overlay{
+  background: #000;
+}

@@ -1,0 +1,9 @@
+.bgimg{
+    position: relative;
+    z-index: -1;
+    img{
+       position: absolute;
+       right: 0;
+       top: -100px;
+    }
+}
