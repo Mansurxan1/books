@@ -14,6 +14,7 @@ function AppRouter() {
   const [user, setUser] = useState(null);
   const [showSignIn, setShowSignIn] = useState(true);
   const [showSignUp, setShowSignUp] = useState(false);
+  // text
   useEffect(() => {
     const lastClearDate = localStorage.getItem("lastClearDate");
     const today = new Date().toISOString().split("T")[0];
